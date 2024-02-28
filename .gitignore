@@ -3,8 +3,8 @@ __pycache__/
 *.py[cod]  # Compiled or optimized Python files
 *$py.class
 *.so # C extension modules
-venv/  # Virtual environment (if you use one)
-env/  # Alternative virtual environment name
+venv
+.env
 
 # Distribution/packaging
 bin/
