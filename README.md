@@ -50,4 +50,29 @@ This project is licensed under the MIT License. See the LICENSE file for details
 * Website: ...
 * Documentation: ...
 
+## ENDPOINTS
+**GET** `http://127.0.0.1:5000/api/v1/users`
+* Retrieves all users
+
+**POST** `http://127.0.0.1:5000/api/v1/users`
+* Registers a user
+
+**POST** `http://127.0.0.1:5000/api/v1/users/login`
+* logs in a user
+
+**DELETE** `http://127.0.0.1:5000/api/v1/users/logout`
+* logs out a user
+
+**POST** `http://127.0.0.1:5000/api/v1/users/reset_password`
+* creates and retrieves a reset password token
+
+**PUT** `http://127.0.0.1:5000/api/v1/users/update_password`
+* updates user password
+
+**PATCH** `http://127.0.0.1:5000/api/v1/users/<user_id>`
+* updates a user's data
+
+**DELETE** `http://127.0.0.1:5000/api/v1/users/<user_id>`
+* deletes a user
+
 Enjoy!
