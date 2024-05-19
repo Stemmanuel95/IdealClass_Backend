@@ -2,22 +2,48 @@
   "name": "idealclass_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "engines": {
+    "node": "v20.9.0",
+    "npm": "v10.1.0",
+    "yarn": "please use npm"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "jsdoc": "jsdoc -r ./routes -d ../ -R ./README.md -P ./package.json ",
+    "lint": "eslint ./**/*.js",
+    "lint-fix": "eslint --fix ./**/*.js",
+    "commitlint": "commitlint --edit",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stemmanuel95/IdealClass_Backend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stemmanuel95/IdealClass_Backend/issues"
+  },
+  "homepage": "https://github.com/Stemmanuel95/IdealClass_Backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongoose": "^8.3.4",
-    "nodemon": "^3.1.0"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2"
+    "@commitlint/config-conventional": "^19.2.2",
+    "commitlint": "^19.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "husky": "^9.0.11",
+    "jsdoc": "^4.0.3",
+    "nodemon": "^3.1.0"
   }
 }
