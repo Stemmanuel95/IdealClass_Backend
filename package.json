@@ -8,10 +8,14 @@
     "yarn": "please use npm"
   },
   "scripts": {
+    "commitlint": "commitlint --edit",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "start:dev": "nodemon app.js",
-    "jsdoc": "jsdoc -r ./routes -d ../ -R ./README.md -P ./package.json "
+    "dev": "nodemon app.js",
+    "jsdoc": "jsdoc -r ./routes -d ../ -R ./README.md -P ./package.json ",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +29,11 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2"
+    "@commitlint/config-conventional": "^19.2.2",
+    "commitlint": "^19.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "husky": "^9.0.11"
   }
 }
