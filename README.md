@@ -1,6 +1,6 @@
 # Ideal Class  Server Application
 
-The backend application for the Mandilas Market Application.
+The backend application for the Ideal Class Application.
 
 It is written using the following stack:
 
@@ -18,4 +18,3 @@ For requirements, see `dependencies` and `devDependencies` in `package.json`
 ## Installation 
 After cloning to the repo, run `npm install` to install all libraries and dependencies.
 Run `npm run dev` to start the application with `Nodemon`. Run `npm run jsdoc` to generate static HTML documentation website. 
-
